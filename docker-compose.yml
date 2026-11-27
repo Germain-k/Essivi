@@ -1,0 +1,17 @@
+# Base PostgreSQL de développement, partagée par tout le groupe.
+# Lancer :  docker compose up -d db
+services:
+  db:
+    image: postgres:16
+    container_name: essivi-db
+    environment:
+      POSTGRES_USER: essivi
+      POSTGRES_PASSWORD: essivi
+      POSTGRES_DB: essivi
+    ports:
+      - "5432:5432"
+    volumes:
+      - essivi-pgdata:/var/lib/postgresql/data
+
+volumes:
+  essivi-pgdata:

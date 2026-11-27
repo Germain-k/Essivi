@@ -1,0 +1,7 @@
+# Le propriétaire d'un dossier est automatiquement demandé en relecture sur les PR qui le touchent.
+# Remplacer les lignes commentées par le username GitHub de chacun.
+
+/backend/         @Daniel-the-one
+/mobile-client/   @Daniel-the-one
+# /mobile-livreur/  @username-de-meruem
+# /web/             @username-du-responsable-web
